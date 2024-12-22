@@ -63,4 +63,42 @@ $(document).ready(function() {
         },
       });
 
+
+
+
+    //   Single Product Page Hide Show Effect on Description
+    // Show description section by default
+    $(".descriptionButton").addClass("active");
+    $(".descriptionSection").addClass("active");
+
+    // Handle Description button click
+    $(".descriptionButton").on("click", function () {
+        $(".additioninfobutton").removeClass("active");
+        $(".additioninfoSection").removeClass("active");
+
+        $(this).addClass("active");
+        $(".descriptionSection").addClass("active");
+    });
+
+    // Handle Additional Information button click
+    $(".additioninfobutton").on("click", function () {
+        $(".descriptionButton").removeClass("active");
+        $(".descriptionSection").removeClass("active");
+
+        $(this).addClass("active");
+        $(".additioninfoSection").addClass("active");
+    });
+
+    $("#exzoom").exzoom({
+
+        // thumbnail nav options
+        "navWidth": 60,
+        "navHeight": 60,
+        "navItemNum": 5,
+        "navItemMargin": 7,
+        "navBorder": 1,
+        "autoPlay": false,
+        "autoPlayTimeout": 2000
+        
+      });
 });

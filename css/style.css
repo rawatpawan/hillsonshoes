@@ -437,6 +437,7 @@ section {
   border: 1px solid #535353;
   text-transform: uppercase;
   padding: 0;
+  align-items: center;
 }
 .ourproductnavul li{
   padding: 5px;
@@ -574,6 +575,106 @@ section {
 }
 
 
+/* single product */
+
+.singleProductPage{
+  padding-bottom: 60px;
+}
+
+.singleProductPage-container {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr); 
+  padding: 16px;
+}
+.singlepage-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr); 
+
+}
+.singleProductPage-item {
+  margin: .5rem 1rem;
+}
+
+.singlepagesection{
+  border: 1px solid #414042;
+}
+.productPrice{
+  padding: .5rem;
+}
+.productPrice p{
+  font-weight: 700;
+}
+.single-isi{
+  width: 86px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.singlepagebutton{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  display: block;
+  background: #f3ba2d;
+  padding: 5px;
+  transition:  0.5s ease;
+
+}
+.singlepagebutton-two{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  background: #414141;
+  padding: 5px;
+  transition:  0.5s ease;
+
+}
+
+.singlepagebutton:hover{
+  color: #ffffff;
+  background: #414141;
+
+}
+
+
+.singlepagebutton-two:hover{
+  color: #000000;
+  background: #f3ba2d;
+}
+
+/* Default hidden state for sections */
+.infosection > div {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+
+/* When the section is active */
+.infosection > .descriptionSection.active,
+.infosection > .additioninfoSection.active {
+  display: block;
+  opacity: 1;
+}
+.table th{
+  color: #000;
+  font-weight: 700;
+}
+.additioninfoSection .table th ,td{
+  padding: .9rem !important;
+}
+
+
+
+
+
+
 /** RESPONSIVE MEDIA QUERY **/
 
 /* Small screens, such as smartphones */
@@ -623,6 +724,10 @@ section {
     display: block;
 
   }
+  .singleProductPage-container {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+
 }
 
 /* Tablets in portrait mode */
@@ -670,6 +775,10 @@ section {
     display: block;
 
   }
+  .singleProductPage-container {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+
 }
 
 /* Tablets in landscape mode and small desktops */
