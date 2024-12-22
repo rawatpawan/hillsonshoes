@@ -166,6 +166,11 @@ section {
 
 /* COMMON CSS ENDS  */
 
+::selection {
+  background-color: #fdb913; 
+  color: #ffffff; 
+}
+
 .desktopMenu .navbar .deskbelhed {
   display: flex;
   position: relative;
@@ -507,14 +512,66 @@ section {
 
 
 
+.contact-container {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 16px;
+  margin-top: 3rem;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center; 
+  text-align: center;
+}
 
 
+.contactdetials{
+  background: #f3ba2d;
+  text-align: left;
+  padding: 2rem;
+}
+.contactform{
+  width: 100%;
+}
 
+.contactform input , textarea{
+  background: #f4f4f4;
+  border-radius: 0px;
+  border: none;
+  margin: 10px 0;
+}
 
+.contactform p, label{
+  color: #000;
+  font-size: 17px;
+  text-align: left;
+}
+.checkboxdiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-
-
-
+}
+.submitButton{
+  background: #414042 !important;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: 'Montserrat';
+  border-radius: 0px;
+  border: none;
+}
+.submitButton:hover{
+  color: #fff;
+  background: #f3ba2d !important;
+}
+.contactform .form-check-input{
+  border: 1px solid #f3ba2d;
+}
 
 
 /** RESPONSIVE MEDIA QUERY **/
@@ -562,6 +619,10 @@ section {
    .product-container {
     grid-template-columns: repeat(2, 1fr); 
   }
+  .contact-container {
+    display: block;
+
+  }
 }
 
 /* Tablets in portrait mode */
@@ -598,6 +659,16 @@ section {
   }
    .product-container {
     grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .contact-container {
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+  .contact-container {
+    display: block;
+
   }
 }
 
