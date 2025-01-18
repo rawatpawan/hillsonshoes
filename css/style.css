@@ -670,8 +670,103 @@ section {
   padding: .9rem !important;
 }
 
+.life-at-hillson .container-fluid{
+  width: 90%;
+}
+
+.life-at-hillson p{
+  font-size: 1.9rem;
+  color: #4b4741;
+}
 
 
+.life-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.life-column {
+  flex: 30%;
+  max-width: 35%;
+  padding: 5px 8px;
+}
+
+.life-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.life-testimonial-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.life-testimonial-img img{
+  height: 350px;
+  width: 350px !important;
+}
+.life-testimonial-text p{
+  color: #ffffff;
+  font-weight: 400;
+}
+
+
+.life-testimonial-carousel-container{
+  position: relative;
+}
+
+/* Center the dots container */
+.owl-dots {
+  position: absolute;
+  bottom: -50px; 
+  left: 50%;
+  transform: translateX(-50%); /* Center the dots horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style individual dots */
+.owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px; /* Adjust spacing between dots */
+  background: #D6D6D6; /* Default dot color */
+  display: block;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+  border-radius: 50%; /* Make dots circular */
+}
+
+/* Active dot color and hover effect */
+.owl-dots .owl-dot.active span, 
+.owl-dots .owl-dot:hover span {
+  background: #f3ba2d; 
+}
+
+
+.lifehead{
+  font-size: 3.6rem;
+  font-weight: 400;
+}
+
+.opening-carousel{
+  margin-top: 3rem;
+}
+.positionbox{
+  background: #f3ba2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem;
+}
+.position-title p{
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #414042;
+}
 
 
 
@@ -727,6 +822,26 @@ section {
   .singleProductPage-container {
     grid-template-columns: repeat(1, 1fr); 
   }
+  .life-at-hillson p{
+    font-size:1rem;
+  }
+  .life-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .life-at-hillson .productpageHeading {
+    font-size: 1.3rem;
+  }
+  .life-testimonial-img img{
+    height: 150px;
+    width: 150px !important;
+  }
+
+  .lifehead{
+    font-size: 2rem;
+  }
+
+  
 
 }
 
@@ -778,7 +893,19 @@ section {
   .singleProductPage-container {
     grid-template-columns: repeat(1, 1fr); 
   }
-
+  .life-at-hillson p{
+    font-size:1rem;
+  }
+  .life-at-hillson .productpageHeading {
+    font-size: 1.3rem;
+  }
+  .life-testimonial-img img{
+    height: 200px;
+    width: 200px !important;
+  }
+  .lifehead{
+    font-size: 2rem;
+  }
 }
 
 /* Tablets in landscape mode and small desktops */
@@ -804,6 +931,16 @@ section {
   .container{
     width: 80%;
   }
+  .life-testimonial-img img{
+    height: 250px;
+    width: 250px !important;
+  }
+  .lifehead{
+    font-size: 3rem;
+  }
+  .life-at-hillson p{
+    font-size: 1.6rem;
+  }
 }
 
 /* Standard desktops and laptops */
@@ -828,6 +965,16 @@ section {
   }
   .container{
     width: 80%;
+  }
+  .life-testimonial-img img{
+    height: 250px;
+    width: 250px !important;
+  }
+  .lifehead{
+    font-size: 3rem;
+  }
+  .life-at-hillson p{
+    font-size: 1.6rem;
   }
 }
 

@@ -64,7 +64,35 @@ $(document).ready(function() {
       });
 
 
+      $(".life-testimonial-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        items: 1
+      });
 
+      $(".opening-carousel").owlCarousel({
+        loop: true,
+        margin: 40,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 2, 
+          },
+          1024: {
+            items: 3, 
+          },
+        },
+      });
 
     //   Single Product Page Hide Show Effect on Description
     // Show description section by default
