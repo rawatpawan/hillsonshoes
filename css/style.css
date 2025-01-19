@@ -673,7 +673,9 @@ section {
 .life-at-hillson .container-fluid{
   width: 90%;
 }
-
+.about-us .container-fluid{
+  width: 90%;
+}
 .life-at-hillson p{
   font-size: 1.9rem;
   color: #4b4741;
@@ -767,7 +769,146 @@ section {
   font-weight: 700;
   color: #414042;
 }
+#managementSection{
+  background: #ebeced;
+}
 
+.imagebox{
+  position: relative;
+  height: 400px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+.imagebox img{
+  position: absolute;
+  max-width: 100%; 
+  max-height: 100%; 
+  bottom: 0;
+}
+.managementSectionContent p{
+  text-align: justify;
+}
+
+
+.timeline-grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 10px; 
+  padding: 10px;
+}
+.timeline-grid-item{
+  /* border-left: 2px solid #fcb918; */
+  padding: 0px 20px;
+  position: relative;
+}
+.timelingepoint{
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 100%;
+  width: auto;
+  left: -12%;
+}
+.timelingepointfifth{
+  height: 98%;
+}
+.timelingepointfour{
+  height: 110%;
+}
+.timelingepointthird{
+  height: 116%;
+}
+.timelingepointsecond{
+  height: 117%;
+}
+.timelingepointfirst{
+  height: 127%;
+}
+.year{
+  font-size: 3.5rem;
+  font-weight: 900;
+  font-family: 'Sofia Sans', sans-serif; 
+  color: #424143;
+  letter-spacing: -2px;
+}
+.margin-fourth{
+  margin-top: 20%;
+}
+
+.margin-third{
+  margin-top: 50%;
+}
+
+.margin-second{
+  margin-top: 70%;
+}
+
+.margin-first{
+  margin-top: 90%;
+}
+.roadImg{
+  width: 100%;
+  margin-top: -13%;
+}
+.greenfactory{
+  background: url('../images/building.png');
+  /* height: 1000px; */
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -44%;
+}
+.greenfactorDiv{
+  margin-top: 25%;
+}
+.greenfactorDiv .mainheading{
+  margin-right: 9%;
+}
+.factoryContent{
+  padding: 2rem 1.5rem;
+  background-color: rgba(28, 126, 72, 0.7); 
+  margin-top: 3rem;
+  float: right;
+}
+.factoryContent p{
+  color: #fff;
+  text-align: justify;
+}
+.missionVission{
+  text-align: center;
+  background: #fcb817;
+  height: 400px;
+}
+.missionVission img{
+  width: 20%;
+
+}
+.missionVission-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.middiv{
+  background: url('../images/values.png');
+  height: 400px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.missionVission-container p{
+  text-align: left;
+  margin-top: 1rem;
+}
+.missionVission-container h2{
+  text-align: left;
+}
+/* .road{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+} */
 
 
 /** RESPONSIVE MEDIA QUERY **/
@@ -841,8 +982,50 @@ section {
     font-size: 2rem;
   }
 
-  
-
+  .imagebox{
+    height: 250px;
+  }
+  .timeline-grid-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .timelingepoint {
+    display: none;
+  }
+  .margin-first{
+    margin-top: 0px;
+  }
+  .margin-second{
+    margin-top: 10%;
+  }
+  .margin-third{
+    margin-top: 10%;
+  }
+  .margin-fourth{
+    margin-top: 10%;
+  }
+  .margin-fifth{
+    margin-top: 10%;
+  }
+  .roadImg{
+    display: none;
+  }
+  .greenfactory{
+    margin-top: 0px;
+  }
+  .greenfactorDiv{
+    margin-top: 0px;
+  }
+  .greenfactorDiv h2{
+    text-align: center !important;
+  }
+  .missionVission-container{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .missionVission{
+    height: auto;
+    padding: 1rem;
+  }
 }
 
 /* Tablets in portrait mode */
@@ -906,6 +1089,50 @@ section {
   .lifehead{
     font-size: 2rem;
   }
+  .imagebox{
+    height: 250px;
+  }
+  .timeline-grid-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .timelingepoint {
+    display: none;
+  }
+  .margin-first{
+    margin-top: 0px;
+  }
+  .margin-second{
+    margin-top: 10%;
+  }
+  .margin-third{
+    margin-top: 10%;
+  }
+  .margin-fourth{
+    margin-top: 10%;
+  }
+  .margin-fifth{
+    margin-top: 10%;
+  }
+  .roadImg{
+    display: none;
+  }
+  .greenfactory{
+    margin-top: 0px;
+  }
+  .greenfactorDiv{
+    margin-top: 0px;
+  }
+  .greenfactorDiv h2{
+    text-align: center !important;
+  }
+  .missionVission-container{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .missionVission{
+    height: auto;
+    padding: 1rem;
+  }
 }
 
 /* Tablets in landscape mode and small desktops */
@@ -940,6 +1167,15 @@ section {
   }
   .life-at-hillson p{
     font-size: 1.6rem;
+  }
+  .greenfactory{
+    margin-top: -56%;
+  }
+  .greenfactorDiv{
+    margin-top: 34%;
+  }
+  .year{
+    font-size: 3rem;
   }
 }
 
@@ -976,6 +1212,13 @@ section {
   .life-at-hillson p{
     font-size: 1.6rem;
   }
+  .greenfactory{
+    margin-top: -52%;
+  }
+  .greenfactorDiv{
+    margin-top: 30%;
+  }
+
 }
 
 /* Large screens and high-resolution displays */
