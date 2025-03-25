@@ -852,13 +852,15 @@ section {
   margin-top: -13%;
 }
 .greenfactory{
-  background: url('../images/building.png');
-  /* height: 1000px; */
+  background: url('../images/building3.png');
   position: relative;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -44%;
+  margin-top: -16%;
+  width: 100%;
+  background-size: 100% 100%;
+  z-index: -1;
 }
 .greenfactorDiv{
   margin-top: 25%;
@@ -1009,6 +1011,16 @@ section {
 }
 
 
+.flytime{
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: #424143;
+  width: 135%;
+  font-weight: 700;
+}
+.timline-description{
+  width: 110% !important;
+}
 
 
 /** RESPONSIVE MEDIA QUERY **/
@@ -1111,6 +1123,7 @@ section {
   }
   .greenfactory{
     margin-top: 0px;
+    background-size: cover;
   }
   .greenfactorDiv{
     margin-top: 0px;
@@ -1142,6 +1155,13 @@ section {
   .indusviewmore{
     font-size: .8rem;
   }
+  .timline-description{
+    width: 100% !important;
+  }
+  .flytime{
+    width:100%;
+  }
+
 }
 
 /* Tablets in portrait mode */
@@ -1234,6 +1254,7 @@ section {
   }
   .greenfactory{
     margin-top: 0px;
+    background-size: cover;
   }
   .greenfactorDiv{
     margin-top: 0px;
@@ -1265,6 +1286,13 @@ section {
   .indusviewmore{
     font-size: .8rem;
   }
+  .timline-description{
+    width: 100% !important;
+  }
+  .flytime{
+    width:100%;
+  }
+
 }
 
 /* Tablets in landscape mode and small desktops */
@@ -1301,7 +1329,7 @@ section {
     font-size: 1.6rem;
   }
   .greenfactory{
-    margin-top: -56%;
+    margin-top: -17%;
   }
   .greenfactorDiv{
     margin-top: 34%;
@@ -1345,7 +1373,7 @@ section {
     font-size: 1.6rem;
   }
   .greenfactory{
-    margin-top: -52%;
+    margin-top: -18%;
   }
   .greenfactorDiv{
     margin-top: 30%;
